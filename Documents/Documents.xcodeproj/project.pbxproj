@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E68A0C5F23143190007FEA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C5E23143190007FEA36 /* AppDelegate.swift */; };
-		E68A0C6123143190007FEA36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C6023143190007FEA36 /* ViewController.swift */; };
 		E68A0C6423143190007FEA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A0C6223143190007FEA36 /* Main.storyboard */; };
 		E68A0C6623143194007FEA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68A0C6523143194007FEA36 /* Assets.xcassets */; };
 		E68A0C6923143194007FEA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A0C6723143194007FEA36 /* LaunchScreen.storyboard */; };
 		E68A0C7423143194007FEA36 /* DocumentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C7323143194007FEA36 /* DocumentsTests.swift */; };
 		E68A0C7F23143194007FEA36 /* DocumentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C7E23143194007FEA36 /* DocumentsUITests.swift */; };
 		E68A0C9023144081007FEA36 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C8F23144081007FEA36 /* Document.swift */; };
+		E68A0C9423144D3A007FEA36 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C9323144D3A007FEA36 /* DocumentsViewController.swift */; };
+		E68A0C9623144DA4007FEA36 /* EditDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0C9523144DA4007FEA36 /* EditDocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		E68A0C5B23143190007FEA36 /* Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Documents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68A0C5E23143190007FEA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E68A0C6023143190007FEA36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E68A0C6323143190007FEA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E68A0C6523143194007FEA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E68A0C6823143194007FEA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E68A0C7E23143194007FEA36 /* DocumentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsUITests.swift; sourceTree = "<group>"; };
 		E68A0C8023143194007FEA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68A0C8F23144081007FEA36 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		E68A0C9323144D3A007FEA36 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		E68A0C9523144DA4007FEA36 /* EditDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +149,8 @@
 		E68A0C8E2314400B007FEA36 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E68A0C6023143190007FEA36 /* ViewController.swift */,
+				E68A0C9323144D3A007FEA36 /* DocumentsViewController.swift */,
+				E68A0C9523144DA4007FEA36 /* EditDocumentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E68A0C6123143190007FEA36 /* ViewController.swift in Sources */,
+				E68A0C9423144D3A007FEA36 /* DocumentsViewController.swift in Sources */,
 				E68A0C5F23143190007FEA36 /* AppDelegate.swift in Sources */,
+				E68A0C9623144DA4007FEA36 /* EditDocumentViewController.swift in Sources */,
 				E68A0C9023144081007FEA36 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
