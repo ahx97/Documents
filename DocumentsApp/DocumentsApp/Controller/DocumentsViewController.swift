@@ -10,9 +10,15 @@ import UIKit
 
 class DocumentsViewController: UIViewController {
     @IBOutlet var docTableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var modifiedLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        
 
         // Do any additional setup after loading the view.
     }

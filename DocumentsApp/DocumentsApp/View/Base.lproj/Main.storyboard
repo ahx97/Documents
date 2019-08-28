@@ -19,15 +19,47 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yWy-Hg-Gc8">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="yWy-Hg-Gc8">
+                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yWy-Hg-Gc8" id="gOs-6V-VvL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSQ-Cs-ptZ">
+                                            <rect key="frame" x="20" y="0.0" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46u-pT-u9W">
+                                            <rect key="frame" x="21" y="19" width="26" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="modified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-27-DQI">
+                                            <rect key="frame" x="20" y="34" width="57" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="46u-pT-u9W" firstAttribute="leading" secondItem="gOs-6V-VvL" secondAttribute="leading" constant="21" id="095-5Y-k15"/>
+                                        <constraint firstItem="LSQ-Cs-ptZ" firstAttribute="leading" secondItem="gOs-6V-VvL" secondAttribute="leading" constant="20" id="RFc-qg-XQk"/>
+                                        <constraint firstItem="46u-pT-u9W" firstAttribute="top" secondItem="LSQ-Cs-ptZ" secondAttribute="bottom" constant="-2" id="eIQ-yV-T3K"/>
+                                        <constraint firstItem="LSQ-Cs-ptZ" firstAttribute="top" secondItem="gOs-6V-VvL" secondAttribute="top" id="l6b-vj-LpG"/>
+                                        <constraint firstItem="Pxc-27-DQI" firstAttribute="leading" secondItem="gOs-6V-VvL" secondAttribute="leading" constant="20" id="pbg-Ey-uI3"/>
+                                        <constraint firstItem="Pxc-27-DQI" firstAttribute="top" secondItem="46u-pT-u9W" secondAttribute="bottom" constant="-2" id="w2E-Nf-Ot7"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="quM-Yt-bvx"/>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="9V2-QF-55N"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Documents" id="5YR-bT-PPu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4DG-13-YjJ">
@@ -38,6 +70,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="docTableView" destination="PIc-cR-gdE" id="ey7-JG-HT8"/>
+                        <outlet property="modifiedLabel" destination="Pxc-27-DQI" id="1VA-fU-xk6"/>
+                        <outlet property="nameLabel" destination="LSQ-Cs-ptZ" id="aU8-BQ-4LF"/>
+                        <outlet property="sizeLabel" destination="46u-pT-u9W" id="AvL-Ce-yNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
