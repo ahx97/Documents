@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E68A0CA42316E5D2007FEA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CA32316E5D2007FEA36 /* AppDelegate.swift */; };
-		E68A0CA62316E5D2007FEA36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CA52316E5D2007FEA36 /* ViewController.swift */; };
 		E68A0CA92316E5D2007FEA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A0CA72316E5D2007FEA36 /* Main.storyboard */; };
 		E68A0CAB2316E5D2007FEA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68A0CAA2316E5D2007FEA36 /* Assets.xcassets */; };
 		E68A0CAE2316E5D2007FEA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A0CAC2316E5D2007FEA36 /* LaunchScreen.storyboard */; };
 		E68A0CB92316E5D2007FEA36 /* DocumentsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CB82316E5D2007FEA36 /* DocumentsAppTests.swift */; };
 		E68A0CC42316E5D2007FEA36 /* DocumentsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CC32316E5D2007FEA36 /* DocumentsAppUITests.swift */; };
+		E68A0CD52316E6CE007FEA36 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CD42316E6CE007FEA36 /* DocumentsViewController.swift */; };
+		E68A0CD72316E70C007FEA36 /* EditDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A0CD62316E70C007FEA36 /* EditDocumentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		E68A0CA02316E5D2007FEA36 /* DocumentsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68A0CA32316E5D2007FEA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E68A0CA52316E5D2007FEA36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E68A0CA82316E5D2007FEA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E68A0CAA2316E5D2007FEA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E68A0CAD2316E5D2007FEA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		E68A0CBF2316E5D2007FEA36 /* DocumentsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68A0CC32316E5D2007FEA36 /* DocumentsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsAppUITests.swift; sourceTree = "<group>"; };
 		E68A0CC52316E5D2007FEA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68A0CD42316E6CE007FEA36 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		E68A0CD62316E70C007FEA36 /* EditDocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDocumentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 		E68A0CA22316E5D2007FEA36 /* DocumentsApp */ = {
 			isa = PBXGroup;
 			children = (
+				E68A0CD32316E652007FEA36 /* Controller */,
+				E68A0CD22316E64A007FEA36 /* View */,
+				E68A0CD12316E641007FEA36 /* Model */,
 				E68A0CA32316E5D2007FEA36 /* AppDelegate.swift */,
-				E68A0CA52316E5D2007FEA36 /* ViewController.swift */,
-				E68A0CA72316E5D2007FEA36 /* Main.storyboard */,
 				E68A0CAA2316E5D2007FEA36 /* Assets.xcassets */,
 				E68A0CAC2316E5D2007FEA36 /* LaunchScreen.storyboard */,
 				E68A0CAF2316E5D2007FEA36 /* Info.plist */,
@@ -123,6 +126,30 @@
 				E68A0CC52316E5D2007FEA36 /* Info.plist */,
 			);
 			path = DocumentsAppUITests;
+			sourceTree = "<group>";
+		};
+		E68A0CD12316E641007FEA36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E68A0CD22316E64A007FEA36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E68A0CA72316E5D2007FEA36 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E68A0CD32316E652007FEA36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E68A0CD42316E6CE007FEA36 /* DocumentsViewController.swift */,
+				E68A0CD62316E70C007FEA36 /* EditDocumentsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E68A0CA62316E5D2007FEA36 /* ViewController.swift in Sources */,
+				E68A0CD72316E70C007FEA36 /* EditDocumentsViewController.swift in Sources */,
 				E68A0CA42316E5D2007FEA36 /* AppDelegate.swift in Sources */,
+				E68A0CD52316E6CE007FEA36 /* DocumentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
