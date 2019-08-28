@@ -1,14 +1,14 @@
 //
-//  DocumentsUITests.swift
-//  DocumentsUITests
+//  DocumentsAppUITests.swift
+//  DocumentsAppUITests
 //
-//  Created by Aaron Henry on 8/26/19.
+//  Created by Aaron Henry on 8/28/19.
 //  Copyright © 2019 Aaron Henry. All rights reserved.
 //
 
 import XCTest
 
-class DocumentsUITests: XCTestCase {
+class DocumentsAppUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
